@@ -3,4 +3,4 @@ module go_learning
 
 go 1.14
 
-replace go_learning/a => ../a
+//replace go_learning/a => ../a
