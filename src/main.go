@@ -12,6 +12,7 @@ package main
 import (
 	"fmt"
 	"go_learning/a"
+	"go_learning/controller"
 	"go_learning/crypt"
 )
 
@@ -19,4 +20,5 @@ func main() {
 	a.Api()
 	value := crypt.Md5("zhangsan")
 	fmt.Println("value is : " + value)
+	controller.HelloController()
 }
