@@ -1,0 +1,5 @@
+# mysql的连接信息
+host: localhost:3306
+user: root
+pwd: zhuchen1994
+dbname: cloud_note

@@ -7,3 +7,9 @@ go 1.14
 
 // Redis的依赖包
 require github.com/go-redis/redis v6.15.9+incompatible
+
+require (
+	// mysql的依赖包
+	github.com/go-sql-driver/mysql v1.5.0
+	gopkg.in/yaml.v2 v2.3.0
+)
