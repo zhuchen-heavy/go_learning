@@ -22,7 +22,8 @@ type mysql struct {
 }
 
 // 读取yaml文件转换为mysql对象。
-// (m *mysql) ： 变量的方法，面向对象的写法
+// (m *mysql) ： 变量的方法，面向对象的写法。
+// Go接收器：方法上增加类型的描述。一个类型加上它的方法等价于面向对象Java中的一个类
 func (m *mysql) getConf() *mysql {
 	yamlFile, err := ioutil.ReadFile("./mysql.yaml")
 	if err != nil {

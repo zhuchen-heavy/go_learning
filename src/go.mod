@@ -12,4 +12,5 @@ require (
 	// mysql的依赖包
 	github.com/go-sql-driver/mysql v1.5.0
 	gopkg.in/yaml.v2 v2.3.0
+	github.com/astaxie/beego v1.12.2
 )

@@ -34,7 +34,9 @@ type User struct {
 
 // 创建连接 "*"：指针运算符，指针传递，返回变量的值。"&"：取地址符号，地址传递，返回变量的地址。
 func createConnect() (DB *sql.DB) {
+	// conn格式：root:zhuchen1994@tcp(127.0.0.1:3306)/cloud_note
 	conn := fmt.Sprintf("%s:%s@%s(%s:%d)/%s", USERNAME, PASSWORD, NETWORK, SERVER, PORT, DATABASE)
+	fmt.Println(conn)
 	DB, err := sql.Open("mysql", conn)
 	if err != nil {
 		fmt.Println("connection to mysql failed:", err)
